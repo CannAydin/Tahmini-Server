@@ -5,8 +5,8 @@ const answersSchema = new mongoose.Schema({
         type : mongoose.Schema.Types.ObjectId,
         ref: 'User',
     },
-    answers : [String],
-    optionalAnswers : [String],
+    answers : String,
+    optionalAnswers : String,
 })
 
 mongoose.model('Answers', answersSchema);

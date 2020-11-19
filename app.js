@@ -24,7 +24,9 @@ app.use(answerRoutes);
 //const User = mongoose.model("User")
 
 
-const mongoUri = "mongodb+srv://acd:aIlXmi0js1bDJjh8@cluster0.m1sfx.mongodb.net/<dbname>?retryWrites=true&w=majority"
+// const mongoUri = "mongodb+srv://acd:aIlXmi0js1bDJjh8@cluster0.m1sfx.mongodb.net/<dbname>?retryWrites=true&w=majority"
+
+const mongoUri = "mongodb://localhost:27017/mongo-test";
 
 // Connect database
 mongoose.connect(mongoUri,{
